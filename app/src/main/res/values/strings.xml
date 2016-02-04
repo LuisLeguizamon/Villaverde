@@ -6,4 +6,23 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_form">Form</string>
+
+    <string name="opcion1">Opción1</string>
+    <string name="opcion2">Opción2</string>
+    <string name="opcion3">Opción3</string>
+    <string name="opcion4">Opción4</string>
+
+    <string name="prompt">Opciones</string>
+
+    
+    <string-array name="opciones">
+        <item>@string/opcion1</item>
+        <item>@string/opcion2</item>
+        <item>@string/opcion3</item>
+        <item>@string/opcion4</item>
+    </string-array>
+
+
+
 </resources>
+
