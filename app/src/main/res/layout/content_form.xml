@@ -13,33 +13,79 @@
     tools:showIn="@layout/activity_form"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Llene el formulario con los datos del vehiculo"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Número de chasis"
         android:inputType="textCapCharacters"
-        android:id="@+id/EditText_chasis"/>
+        android:id="@+id/EditText_chasis"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="20dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Fecha "
-        android:inputType="date"
-        android:id="@+id/EditText_fecha" />
+        android:hint="Modelo"
+        android:inputType="text"
+        android:id="@+id/EditText_marca"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="20dp"/>
 
-    <Spinner
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:spinnerMode="dialog"
-        android:prompt="@string/prompt"
-        android:entries="@array/opciones"
-        android:id="@+id/spinner"
-        ></Spinner>
+        android:text="@string/estado"
+        android:textSize="20sp"
+        android:fontFamily="@string/roboto_regular"
+        android:paddingTop="20dp"/>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <RadioButton android:id="@+id/radio_opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion1"
+            android:textSize="20sp"/>
+
+        <RadioButton android:id="@+id/radio_opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion2"
+            android:textSize="20sp" />
+
+        <RadioButton android:id="@+id/radio_opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion3"
+            android:textSize="20sp"/>
+
+        <RadioButton android:id="@+id/radio_opcion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion4"
+            android:textSize="20sp"/>
+
+        <RadioButton android:id="@+id/radio_opcion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion5"
+            android:textSize="20sp"/>
+
+        <RadioButton android:id="@+id/radio_opcion6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcion6"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
 
     <EditText
         android:layout_width="match_parent"
@@ -47,13 +93,22 @@
         android:inputType="textMultiLine"
         android:lines="5"
         android:hint="Observación"
-        android:id="@+id/EditText_multiline" />
+        android:id="@+id/EditText_multiline"
+        android:textSize="20sp"
+        android:fontFamily="@string/roboto_regular"/>
 
-    <Button
+    <Gallery android:id="@+id/gallery"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:id="@+id/save_button"/>
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"></Gallery>
+
+    <Button android:id="@+id/save_button"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:text="GUARDAR"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
 
 
 </LinearLayout>

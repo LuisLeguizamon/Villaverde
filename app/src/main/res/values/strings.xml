@@ -5,24 +5,42 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_form">Form</string>
+    <string name="title_activity_form">Formulario</string>
 
-    <string name="opcion1">Opción1</string>
-    <string name="opcion2">Opción2</string>
-    <string name="opcion3">Opción3</string>
-    <string name="opcion4">Opción4</string>
+    <string name="opcion1">AUSENTE</string>
+    <string name="opcion2">ESPERA</string>
+    <string name="opcion3">CHAPERÍA</string>
+    <string name="opcion4">PINTURA</string>
+    <string name="opcion5">TERMINACIONES</string>
+    <string name="opcion6">FINALIZADO</string>
 
     <string name="prompt">Opciones</string>
 
     
-    <string-array name="opciones">
+    <string-array name="Estado">
         <item>@string/opcion1</item>
         <item>@string/opcion2</item>
         <item>@string/opcion3</item>
         <item>@string/opcion4</item>
+        <item>@string/opcion5</item>
+        <item>@string/opcion6</item>
     </string-array>
+
+    <string name="estado">Estado</string>
+
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_medium">sans-serif-medium</string>
 
 
 
 </resources>
+
+
+    <!--android:fontFamily="sans-serif"           // roboto regular
+    android:fontFamily="sans-serif-light"     // roboto light
+    android:fontFamily="sans-serif-condensed" // roboto condensed
+    android:fontFamily="sans-serif-thin"      // roboto thin (android 4.2)
+    android:fontFamily="sans-serif-medium"    // roboto medium (android 5.0)
+        -->
+
 

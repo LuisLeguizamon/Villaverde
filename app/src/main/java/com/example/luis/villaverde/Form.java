@@ -39,8 +39,8 @@ public class Form extends AppCompatActivity {
 
                 FileUri file = new FileUri();
 
-               fileUri = file.getOutputMediaFileUri(MEDIA_TYPE_IMAGE); // create a file to save the image
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
+               //fileUri = file.getOutputMediaFileUri(MEDIA_TYPE_IMAGE); // create a file to save the image
+                //intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
 
                 // start the image capture Intent
                 startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);

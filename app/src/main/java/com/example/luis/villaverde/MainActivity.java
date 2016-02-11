@@ -15,7 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,7 +26,8 @@ public class MainActivity extends AppCompatActivity
     public RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    static final String[] valores = new String[] {"Aaaa","Bbbbb","Ccccc","Dddddd","Eeeeee"};
+    //static final String[] valores = new String[] {"Aaaa","Bbbbb","Ccccc","Dddddd","Eeeeee"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +60,29 @@ public class MainActivity extends AppCompatActivity
         mLayoutManager= new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
+
+
         //specify an adapter
-        mAdapter = new Adapter_main(valores);
+
+       // Autos cars_list = new Autos();
+
+        List cars_list = new ArrayList();
+        cars_list.add(new Autos("Ford Ranger","CV34503FF"));
+
+        cars_list.add(new Autos( "Hyundai i10","AD33422HH"));
+
+        cars_list.add(new Autos( "Kia Rio","DA33422QQ"));
+
+        cars_list.add(new Autos("Kia Sportage","TT33344BB"));
+
+        cars_list.add(new Autos( "Mercedes Benz C200","GS33422YY"));
+
+        cars_list.add(new Autos("Nissan Patrol","FF33344GG"));
+
+        cars_list.add(new Autos("Toyota Hilux","FF33344KK"));
+
+
+        mAdapter = new Adapter_main(cars_list);
         mRecyclerView.setAdapter(mAdapter);
     }
 
