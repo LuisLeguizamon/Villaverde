@@ -12,6 +12,6 @@
         android:title="@string/action_search"
         android:orderInCategory="200"
         app:showAsAction="always"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@mipmap/ic_search"
         />
 </menu>
